@@ -1,0 +1,89 @@
+# You can override this for example by using https://gitattributes.io/
+# Consider whether you want to use git large file storage!
+
+# Media Files and Archives should be stored in Git LFS
+## Images
+*.png filter=lfs diff=lfs merge=lfs binary
+*.jpg filter=lfs diff=lfs merge=lfs binary
+*.jpeg filter=lfs diff=lfs merge=lfs binary
+*.ico filter=lfs diff=lfs merge=lfs binary
+*.gif filter=lfs diff=lfs merge=lfs binary
+*.eps filter=lfs diff=lfs merge=lfs binary
+*.bmp filter=lfs diff=lfs merge=lfs binary
+*.tiff filter=lfs diff=lfs merge=lfs binary
+*.tif filter=lfs diff=lfs merge=lfs binary
+*.webp filter=lfs diff=lfs merge=lfs binary
+## Audio
+*.m4a filter=lfs diff=lfs merge=lfs binary
+*.mid filter=lfs diff=lfs merge=lfs binary
+*.midi filter=lfs diff=lfs merge=lfs binary
+*.mp3 filter=lfs diff=lfs merge=lfs binary
+*.mp4 filter=lfs diff=lfs merge=lfs binary
+*.ogg filter=lfs diff=lfs merge=lfs binary
+## Video
+*.mp4 filter=lfs diff=lfs merge=lfs binary
+*.avi filter=lfs diff=lfs merge=lfs binary
+*.flv filter=lfs diff=lfs merge=lfs binary
+*.m4v filter=lfs diff=lfs merge=lfs binary
+*.mpg filter=lfs diff=lfs merge=lfs binary
+*.mpeg filter=lfs diff=lfs merge=lfs binary
+*.webm filter=lfs diff=lfs merge=lfs binary
+## Fonts
+*.ttf filter=lfs diff=lfs merge=lfs binary
+*.eot filter=lfs diff=lfs merge=lfs binary
+*.otf filter=lfs diff=lfs merge=lfs binary
+*.woff filter=lfs diff=lfs merge=lfs binary
+*.woff2 filter=lfs diff=lfs merge=lfs binary
+## Binary Documents
+*.pdf filter=lfs diff=lfs merge=lfs binary
+*.doc filter=lfs diff=lfs merge=lfs binary
+*.docx filter=lfs diff=lfs merge=lfs binary
+*.xls filter=lfs diff=lfs merge=lfs binary
+*.xlsx filter=lfs diff=lfs merge=lfs binary
+*.ppt filter=lfs diff=lfs merge=lfs binary
+*.pptx filter=lfs diff=lfs merge=lfs binary
+*.dot filter=lfs diff=lfs merge=lfs binary
+*.odf filter=lfs diff=lfs merge=lfs binary
+*.odt filter=lfs diff=lfs merge=lfs binary
+*.ods filter=lfs diff=lfs merge=lfs binary
+*.odp filter=lfs diff=lfs merge=lfs binary
+*.odg filter=lfs diff=lfs merge=lfs binary
+## Archives
+*.7z filter=lfs diff=lfs merge=lfs binary
+*.zip filter=lfs diff=lfs merge=lfs binary
+*.gz filter=lfs diff=lfs merge=lfs binary
+*.tar filter=lfs diff=lfs merge=lfs binary
+*.tgz filter=lfs diff=lfs merge=lfs binary
+*.dll filter=lfs diff=lfs merge=lfs binary
+*.so filter=lfs diff=lfs merge=lfs binary
+*.war filter=lfs diff=lfs merge=lfs binary
+*.jar filter=lfs diff=lfs merge=lfs binary
+*.ear filter=lfs diff=lfs merge=lfs binary
+## Executables
+*.exe filter=lfs diff=lfs merge=lfs binary
+*.out filter=lfs diff=lfs merge=lfs binary
+*.pyc filter=lfs diff=lfs merge=lfs binary
+
+# Scripts
+## These are explicitly unix files and should use lf
+*.bash     text eol=lf
+*.fish     text eol=lf
+*.sh       text eol=lf
+## These are explicitly windows files and should use crlf
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.ps1      text eol=crlf
+
+# LabVIEW specifics
+## 
+*.vi lockable
+*.vit lockable
+*.ctl lockable
+*.ctt lockable
+*.lvclass lockable
+*.lvlib lockable
+*.lvlibp lockable
+*.lvproj lockable
+*.xml lockable
+*.json lockable
+*.ini lockable

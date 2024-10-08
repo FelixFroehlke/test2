@@ -1,0 +1,13 @@
+# Title: Summary, imperative, start upper case, don't end with a period
+# No more than 50 chars. #### 50 chars is here:  #
+
+# Remember blank line between title and body.
+
+# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
+# Wrap at 72 chars. ################################## which is here:  #
+
+# use smart commits to interact with Jira
+# supported commands: comment, time, workflow transition
+# https://support.atlassian.com/jira-software-cloud/docs/process-issues-with-smart-commits/
+# Example: JRA-34 #comment corrected indent issue
+# Syntax: <ignored text> <ISSUE_KEY> <ignored text> #comment <comment_string>
